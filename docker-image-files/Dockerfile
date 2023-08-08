@@ -1,5 +1,7 @@
 FROM python:3.10
 WORKDIR /app
+RUN pip install gdown
+RUN gdown --id 1ASv40otDT8YdSp71D-8zh3XU3EtoEngR
 RUN pip install Pillow
 RUN pip install fastapi
 RUN pip install torch --index-url https://download.pytorch.org/whl/cpu
